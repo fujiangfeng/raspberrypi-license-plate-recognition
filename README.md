@@ -7,9 +7,9 @@
 [Operating system images](https://www.raspberrypi.com/software/operating-systems/) 下载。
 
 &emsp;&emsp;1.打开烧录软件，选择合适的系统，SD卡位置。
-<div align=center><img src="C:\Users\FJF\Desktop\picture\1.jpg" style="zoom:30%"/></div>
+<div align=center><img src="https://thumbnail0.baidupcs.com/thumbnail/97c851b2dt09de0d168822b39b6592f9?fid=2001701499-250528-1051855254750668&time=1654099200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-BPHpiBy9X5N8WNPJ0rKFOWdOT4w%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=66698426976183261&dp-callid=0&file_type=0&size=c1549_u872&quality=90&vuk=-&ft=video&autopolicy=1" style="zoom:30%"/></div>
 &emsp;&emsp;2.本次实验选择 Raspberry PI OS (64-bit) 系统，期间也用过Ubuntu版本，但是在VNC连接的时候出现问题，未能成功解决。
-<div align=center><img src="C:\Users\FJF\Desktop\picture\2.jpg" style="zoom:50%"/></div>
+<div align=center><img src="https://thumbnail0.baidupcs.com/thumbnail/7faed5c89nbf9aac46aa6927fc1639dd?fid=2001701499-250528-801890243231561&time=1654099200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-KKs5QStig0U0BdB6JHtABQ0NoQM%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=66698426976183261&dp-callid=0&file_type=0&size=c1549_u872&quality=90&vuk=-&ft=video&autopolicy=1" style="zoom:50%"/></div>
 &emsp;&emsp;3.点击蓝框中所选中的设置按钮进行WIFI、SSH的账号密码设置。
 <div align=center><img src="C:\Users\FJF\Desktop\picture\3.jpg" style="zoom:45%"/></div>
 &emsp;&emsp;4.电脑端和树莓派远程连接会用到SSH服务，所有步骤内唯一需要记住的就是这里所设置的账号和密码。
