@@ -1,8 +1,10 @@
 # 1.树莓派配置
-&nbsp;
+
 ## 1.1本次实验树莓派概述
 &emsp;&emsp;树莓派型号为树莓派3B+（不带有屏幕和网线），电脑系统为Ubuntu20.04。树莓派通过SSH的方式与PC端进行远程连接，并利用VNC软件对树莓派进行远程操作，接下来将一一进行介绍。
+
 &nbsp;
+
 ## 1.2树莓派系统安装
 &emsp;&emsp;树莓派系统的安装采用的工具是 [Raspberry Pi Image](https://www.raspberrypi.com/software/)
 对MicroSD卡进行系统烧录。其中Raspberry Pi Image工具所下载的系统都为最新发布的系统，如果要安装其他版本可以进入
@@ -10,17 +12,31 @@
 
 1.打开烧录软件，选择合适的系统，SD卡位置。
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%281%29.png" width="500"/></div>
-2.本次实验选择 Raspberry PI OS (64-bit) 系统，期间也用过Ubuntu版本，但是在VNC连接的时候出现问题，未能成功解决。
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%287%29.png" width="500"/></div>
-3.点击蓝框中所选中的设置按钮进行WIFI、SSH的账号密码设置。
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%286%29_LI.jpg" width="500"/></div>
-4.电脑端和树莓派远程连接会用到SSH服务，所有步骤内唯一需要记住的就是这里所设置的账号和密码。
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%2811%29.png" width="500"/></div>
-5.电脑端和树莓派远需要在一个局域网下才能通过SSH进行连接。本人采用手机热点进行WIFI部署。需要输入WIFI的账号密码，并把地区改成中国（CN）。
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%288%29.png" width="500"/></div>
-6.最后点击烧录按键，等待烧录完成插入树莓派中，打开树莓派电源等待几十秒即可看见树莓派已经连上了WIFI，连上WIFI后即可进行下一步操作。 
 
 &nbsp;
+
+2.本次实验选择 Raspberry PI OS (64-bit) 系统，期间也用过Ubuntu版本，但是在VNC连接的时候出现问题，未能成功解决。
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%287%29.png" width="500"/></div>
+
+&nbsp;
+
+3.点击蓝框中所选中的设置按钮进行WIFI、SSH的账号密码设置。
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%286%29_LI.jpg" width="500"/></div>
+
+&nbsp;
+
+4.电脑端和树莓派远程连接会用到SSH服务，所有步骤内唯一需要记住的就是这里所设置的账号和密码。
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%2811%29.png" width="500"/></div>
+
+&nbsp;
+
+5.电脑端和树莓派远需要在一个局域网下才能通过SSH进行连接。本人采用手机热点进行WIFI部署。需要输入WIFI的账号密码，并把地区改成中国（CN）。
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%288%29.png" width="500"/></div>
+
+&nbsp;
+
+6.最后点击烧录按键，等待烧录完成插入树莓派中，打开树莓派电源等待几十秒即可看见树莓派已经连上了WIFI，连上WIFI后即可进行下一步操作。 
+
 ## 1.3 SSH、VNC   
 &emsp;&emsp;通过以上步骤后，树莓派连接到了WIFI，将树莓派和电脑连接到同一个wifi，通过手机查看所分配的IP地址并记住。接下来就开始SSH、VNC远程连接部分。
 
@@ -37,6 +53,8 @@ rm -rf ~/.ssh/known_hosts
 ```
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-05-31%2018-42-49%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-05-31%2018-43-04%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
+
+&nbsp;
 
 2.通过下面的代码进行树莓派参数配置。
 
@@ -55,6 +73,7 @@ sudo raspi-config
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2015-05-45%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2015-05-42%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
 
+&nbsp;
 
 3.开启VNC开关后，通过[VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)软件对树莓派进行远程桌面连接。
 &emsp;&emsp;
@@ -161,7 +180,7 @@ cd /home/pi/Downloads/yolov5
 ```
 pip3 install -r requirements.txt
 ```
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2017-05-07%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/1.png" width="500"/></div>
 &emsp;&emsp;其中requirements.txt文件有几处地方需要改动，本人在实验时按照默认文件安装python库出现了各种情况，需要特别注意。
 
 &emsp;&emsp;本人将YOLOv5自带的文件从以下内容
@@ -252,7 +271,7 @@ pip3 install onnx
 ```
 pip3 install onnxruntime
 ```
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2017-05-48%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2.png" width="500"/></div>
 
 &nbsp;
 
@@ -266,7 +285,7 @@ sudo apt-get install motion
 ```
 sudo nano /etc/motion/motion.conf
 ```
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2017-07-10%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/4.png" width="500"/></div>
 
 &emsp;&emsp;更改以下参数，stream_maxrate设置100或者以上，视频流虽然很流畅，但是运行YOLOv5的时候树莓派吃不消，具体参数可以自行搜索。
 
@@ -285,3 +304,22 @@ sudo motion
 
 &nbsp;
 ## 1.6 在树莓派端运行YOLOv5
+（1）先进入YOLOv5文件夹所在区域
+```
+cd /home/pi/Downloads/yolov5
+```
+（2）启动相机
+```
+sudo motion
+```
+（3）防止报错
+```
+export OMP_NUM_THREADS=1
+```
+（4）运行项目
+```
+python3 detect.py
+```
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/3.png" width="500"/></div>
+（5）运行结果
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/%E5%AA%92%E4%BD%931%2000_00_00-00_00_30.gif" width="500"/></div>
