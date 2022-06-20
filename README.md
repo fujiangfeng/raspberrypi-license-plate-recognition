@@ -62,7 +62,7 @@ sudo raspi-config
 （1）输入需要连接的树莓派地址
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2015-07-09%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
 （2）输入ssh的账号和密码
-<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2015-05-42%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
+<div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2015-07-12%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
 
 &nbsp;
 ## 1.4 换源
