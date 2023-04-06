@@ -1,0 +1,8 @@
+train: datasets/images/train/
+val: datasets/images/val/
+test: datasets/images/test/
+# number of classes
+nc: 1
+
+# class names
+names: [ 'plate' ]
