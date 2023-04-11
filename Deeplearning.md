@@ -47,10 +47,10 @@ sudo apt install build-essential
 -------------------------------------------------------------------------------------
 &nbsp;
 
-2.安装驱动
+2.安装驱动和cuda
 &nbsp;
 
-打开终端分别输入命令,此命令可以自动检测显卡并安装对应的驱动，方便快捷！
+打开终端分别输入命令,此命令可以自动检测显卡并安装对应的驱动和cuda，方便快捷！
 
 ```
 ubuntu-drivers devices
@@ -59,7 +59,7 @@ ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
 ```
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/%E6%88%AA%E5%9B%BE%202023-04-06%2020-46-30.png" width="500"/></div>
-&emsp;&emsp;至此驱动安装完成！！！
+&emsp;&emsp;至此驱动和cuda安装完成！！！
 
 -------------------------------------------------------------------------------------
 &nbsp;

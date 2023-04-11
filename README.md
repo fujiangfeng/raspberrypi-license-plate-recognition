@@ -1,11 +1,16 @@
 # raspberrypi-license-plate-recognition
-&emsp;&emsp;树莓派车牌检测和识别系统，采用YOLOv5-6.1+LPRNet+STNet，详细介绍包括模型代码和树莓派配置！
-都是做毕业设计的干啥花那些钱去买，留点饭钱自己多吃点不香吗？淘宝开价就是2k，想钱想魔怔了是吧。这项目是我去年拼接的，有啥不会直接问我，不管是车牌识别还是树莓派移植，还是深度学习训练，还是代码改写，都可以交流。
+&emsp;&emsp;本项目是基于树莓派的深度学习车牌检测和识别系统，采用YOLOv5+LPRNet+STNet。YOLOv5是用于检测车牌位置，LPRNet是用于车牌字符识别，STNet是用于矫正车牌，使得车牌字符识别率更高。
+本项目训练了多个模型运行在树莓派上，包括yolov5 5.0版本。yolov5 6.2版本，yolov5 lite版本，最终采用yolov5 6.1版本的YOLOv5n对应的onnx文件，其运行速度和准确率相较于其他两个都有一定的提升。
 
-&emsp;&emsp;目前已经编写了：1.树莓派深度学习环境从0开始配置，详情请看RaspberrySetting.md。2.Ubuntu深度学习环境从0开始配置，详情请看Deeplearning.md。
-后续还会编写如何训练车牌检测以及识别两个模块。
+&emsp;&emsp;目前已经编写了：
 
-还有问题可以加入群聊，车牌识别交流群：
+&emsp;&emsp;1.树莓派深度学习环境从0开始配置，详情请看RaspberrySetting.md。
+
+&emsp;&emsp;2.Ubuntu深度学习环境从0开始配置，详情请看Deeplearning.md。
+
+&emsp;&emsp;后续还会编写如何训练车牌检测以及识别等，有问题可以加群交流。
+
+&emsp;&emsp;车牌识别交流群：
 ```
 572145690
 ```
