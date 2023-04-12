@@ -1,5 +1,5 @@
 # 1.树莓派配置
-
+&emsp;&emsp;写在最前面：将该项目上传网络的初衷是因为网上有很多优秀的贴子，但是有些年份较早，有些完整性不高，我就把很多帖子整合到一起，其中继承了很多大佬的经验，在此非常感谢各位前辈为我们留下很好的经验贴。因为我也是第一次接触深度学习，有不妥之处还望大佬指出。
 ## 1.1本次实验树莓派概述
 &emsp;&emsp;树莓派型号为树莓派3B+（不带有屏幕和网线），电脑系统为Ubuntu20.04。树莓派通过SSH的方式与PC端进行远程连接，并利用VNC软件对树莓派进行远程操作，接下来将一一进行介绍。本次实验为2022年6月完成，若时间差距过大不建议参考本文章。
 
@@ -118,11 +118,7 @@ sudo nano /etc/apt/sources.list.d/raspi.list
 ```
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/2022-06-20%2016-57-48%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png" width="500"/></div>
 
-&emsp;&emsp;将其中的代码从如下所示
-```
-deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ bullseye main
-```
-&emsp;&emsp;改为如下所示
+&emsp;&emsp;将其中的代码改为如下所示
 ```
 deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ bullseye main
 ```
@@ -181,7 +177,7 @@ cd /home/pi/Downloads/yolov5
 pip3 install -r requirements.txt
 ```
 <div align=center><img src="https://fjf-zdc.oss-cn-hangzhou.aliyuncs.com/raspberrypicture/1.png" width="500"/></div>
-&emsp;&emsp;其中requirements.txt文件有几处地方需要改动，本人在实验时按照默认文件安装python库出现了不同报错，踩了很多。其中需要注意opencv、numpy、torch、torchvision的格式，如果默认安装在某个库卡住建议更换方法，不建议死磕到底。opencv不能直接用pip opencv-python进行安装，numpy需要指定一个版本。torch和torchvision建议试多个版本，我试了许多，只有torch == 1.8.1，torchvision ==0.9.1时可以正常使用。
+&emsp;&emsp;其中requirements.txt文件有几处地方需要改动，本人在实验时按照默认文件安装python库出现了不同报错，踩了很多。其中需要注意opencv、numpy、torch、torchvision的格式，如果默认安装在某个库卡住建议更换方法，不建议死磕到底。opencv不能直接用pip opencv-python进行安装，numpy需要指定一个版本。torch和torchvision建议试多个版本，我试了许多，只有torch == 1.8.1，torchvision ==0.9.1时可以正常使用。（重点！！！）
 
 ```
 # pip install -r requirements.txt
