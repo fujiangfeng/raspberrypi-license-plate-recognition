@@ -7,13 +7,7 @@
 
 &emsp;&emsp;目前已经编写了：
 
-&emsp;&emsp;1.树莓派深度学习环境从0开始配置，详情请看RaspberrySetting.md。
+&emsp;&emsp;1.树莓派深度学习环境从0开始配置，详情请看RaspberrySetting.md
 
-&emsp;&emsp;2.Ubuntu深度学习环境从0开始配置，详情请看Deeplearning.md。
+&emsp;&emsp;2.Ubuntu深度学习环境从0开始配置，详情请看Deeplearning.m
 
-&emsp;&emsp;后续还会编写如何训练车牌检测以及识别等，有问题可以加群交流。
-
-&emsp;&emsp;车牌识别交流群：
-```
-572145690
-```
